@@ -1,0 +1,184 @@
+body{
+    margin: 0px;
+    background-image:url(https://th.bing.com/th/id/Ref9abf36f55d8dce0a6d4be7add3e6fd?rik=%2f49RnQrigQt8QQ&pid=ImgRaw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    
+}
+
+
+
+nav{
+    position: absolute;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right bottom, 
+     rgba(255,255,255,0.9)
+    ,rgba(255,255,255,0.5));
+    backdrop-filter: blur(4rem);
+
+    font-size: 14px;
+    padding: 2px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius:0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+input{
+    background: linear-gradient(to right bottom, 
+     rgba(255,255,255,0.9)
+    ,rgba(255,255,255,0.3));
+    border: none;
+    width: 90%;
+    font-family: 'Open Sans',sans-serif;;
+}
+
+#links{
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f1f1f2;
+}
+
+#links a{
+    margin: 10px;
+}
+a{
+    cursor: pointer;
+}
+
+
+
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 80px;
+    color: white;
+}
+
+
+nav img{
+    width: 80px;
+    height: 80px;
+    padding-left: 10px;
+}
+
+footer{
+    background-color: rgb(69, 74, 80);
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+
+section{
+    text-align: center;
+    margin: 10px;
+    z-index: 2;
+}
+
+section h1 {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+}
+
+
+
+
+
+
+#menu{
+    display: none;
+}
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: #f1f1f2;
+    margin: 5px 0;
+}
+
+.hidden{
+    display: none !important;
+}
+
+
+
+  #negozi {
+      
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    font-family: fantasy;
+  }
+
+  #negozi .negozio {
+    display: flex;
+    border-radius: 1rem;
+    background: linear-gradient(to right bottom, 
+     rgba(255,255,255,1)
+    ,rgba(255,255,255,0.5));
+    box-shadow: 1px 1px 30px rgba(122,122,122,0.2);
+    backdrop-filter: blur(4rem);
+    flex-direction:column;
+    align-items: center;
+    width: 20vw;
+    font-family: 'Oswald', sans-serif;
+    margin: 2%;
+  }
+
+  #negozi .negozio h1{
+     font-family: 'Oswald', sans-serif;
+      color: rgb(31, 26, 26);
+      font-size: 15px;
+      font-style: normal;
+  }
+
+
+
+@media(max-width: 750px){
+    #links{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    body{
+        margin: 0;
+        font-size: 20px;
+    }
+    section{
+        margin: 10px 10px;
+    }
+    .store{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .store div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .store img{
+        height: 75%;
+        width: 75%;
+    }
+
+
+}
